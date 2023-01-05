@@ -3,6 +3,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    margin: auto;
     background-color: #F7E0DA;
     color: #5E4039;
     font-family: 'Kanit', sans-serif;
@@ -12,7 +13,7 @@ html, body{
 
 #index-body{
     background-image: url("PortLandingFloralMobile.png");
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -37,7 +38,7 @@ ul{
 /* hamburger button */
 label{
     background-image: url("menu-outline.svg");
-    background-size: 130px;
+    background-size: 100px;
     background-repeat: no-repeat;
     background-position: top right;
     display: block;
@@ -48,7 +49,7 @@ label{
 
     input:checked ~ label{
         background-image: url("close-outline.svg");
-        background-size: 130px;
+        background-size: 100px;
         background-repeat: no-repeat;
         background-position: top right;
         display: block;
@@ -106,7 +107,6 @@ input#menu{
       header{
         width: 100%;
         padding-bottom: 30px;
-        border-bottom:#5E4039 2.5px solid;
       }
 
       #index-name{
@@ -146,22 +146,17 @@ input#menu{
       }
 
       #one-work{
-        padding-bottom: 60px;
-        border-bottom:#5E4039 2.5px solid;
+        padding-bottom: 40px;
       }
 
       #one-work p{
-        margin-top: 15px;
+        margin-top: 0px;
         font-size: 1.5em;
-      }
-
-      #last-work{
-        border-bottom: none;
       }
 
       .works img{
         clear: left;
-        width: 100%;
+        width: 90%;
       }
 
       .about h1{
@@ -174,12 +169,8 @@ input#menu{
       }
 
       .about-socials{
-        text-align: center;
-      }
-
-      .about-socials li{
-        display: inline-block;
-        font-size: 3em;
+        display: grid;
+        grid-template-columns: 1fr;
       }
 
       .about{
@@ -187,18 +178,17 @@ input#menu{
       }
 
       footer{
-        height: 25%;
+        /* height: 25%; */
         width: 100%;
         background-color: #DE9785;
         text-align: center;
         font-weight: 700;
         font-size: 2em;
-        border-top: #5E4039 2.5px solid;
       }
 
       .footer-name{
         padding: 1% 0 2% 0;
-        margin: 0 0 20px 0;
+        margin: 0 0 0 0;
       }
 
       .footer-name p{
@@ -232,7 +222,6 @@ input#menu{
       border: none;
       height: 20%;
       width: 100%;
-      padding-bottom: 50px;
     }
 
     .headername{
@@ -406,41 +395,65 @@ label{
 
   #one-work p{
     width: 42%;
-    float: right;
+    float: left;
     margin: auto;
     padding-top: 6%;
   }
 
   #one-work div{
     width: 54%;
-    float: right;
+    float: left;
     padding-bottom: 5%;
   }
 
   .about{
     clear: right;
-    font-size: 1.8em;
+    font-size: 20pt;
   }
 
   .about h1{
     text-align: left;
     padding-left: 30px;
     margin-top: 0;
+    margin: 0px 0px 0px 0px;
   }
 
   .about p{
-    padding: 0 30px 0 60px;
+    padding: 0 30px 0 30px;
+    margin: 10px 0px 40px 0px;
+
   }
 
   .about-socials{
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    width: 40%;
+  }
+
+  .about-socials a:hover{
+    opacity: 50%;
+  }
+
+  #social-icon{
+    text-align: right;
+  }
+
+  #social-tag{
     text-align: left;
-    padding-left: 60px;
+  }
+
+  #social-tag p{
+    padding-bottom: 10px;
+  }
+
+  .about-socials ion-icon{
+    font-size: 60pt;
   }
 
 footer{
-  clear: right;
-  height: 25%;
+  clear: both;
 }
-
 
 }
